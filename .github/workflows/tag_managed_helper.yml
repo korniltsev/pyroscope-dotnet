@@ -3,7 +3,9 @@ name: Release managed helper
 on:
   push:
     tags:
-      - v*
+      - 'v*'
+      - '!v*opentelemetry'
+      - '!v*opentracing'
 
 jobs:
   release-managed-helper:

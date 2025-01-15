@@ -3,8 +3,9 @@ name: Release linux profiler
 on:
   push:
     tags:
-      - v*
-
+      - 'v*'
+      - '!v*opentelemetry'
+      - '!v*opentracing'
 jobs:
   release-linux-profiler-x86_64:
     runs-on: ubuntu-latest
